@@ -1,0 +1,54 @@
+*{
+}
+
+body
+{
+    background-image : linear-gradient(to bottom left,gray 20%,blue 150% );
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    height: 30rem;
+    width: 30rem;
+    background-color: rgb(173, 173, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.empty
+{
+    border: 2px solid black;
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill{
+    height: 9rem;
+    width: 9rem;
+    background-color: rgb(47, 47, 126);
+}
+
+.hovered
+{
+    background-color: rgb(88, 108, 138);
+}
+
+.startd{
+    border: 10px solid rgb(37, 27, 58);
+}
