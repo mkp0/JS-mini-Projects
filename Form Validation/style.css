@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --success-color: green;
+    --error-color: red;
+}
+
+body {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(207, 217, 233);
+}
+
+.container {
+    background-color: rgb(231, 231, 231);
+    box-shadow: 1px 1px 10px rgb(128, 127, 127);
+    width: 400px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+form {
+    padding: 1rem;
+}
+
+.form-item {
+    position: relative;
+    margin: 1.5rem 0.5rem;
+}
+
+.form-item label {
+    display: block;
+    color: rgb(95, 93, 93);
+    font-weight: 600;
+    margin: 5px;
+
+}
+
+.form-item input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(110, 110, 110);
+}
+
+.form-item input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-item.success input {
+    border-color: var(--success-color);
+}
+
+.form-item.failure input {
+    border-color: var(--error-color);
+}
+
+small {
+    color: var(--error-color);
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-item.failure small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: rgb(143, 143, 226);
+    width: 100%;
+    padding: 7px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
